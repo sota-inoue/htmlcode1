@@ -1,0 +1,55 @@
+<!-- Bootstrapを使う-->
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Project Nyaan</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <style>
+            body{
+                padding:30px;
+                background-color:aqua;
+                color:blue;
+            }
+            p {
+                border:1px solid red;
+                margin: 30px;
+            }
+            .start-template{
+                padding: 40px 15px;
+                background-color: white;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="start-template">
+                <h1>Do you want to watch youtube?</h1>
+                <img class="img-responsive center-block" src="picture\youtube.jpg">
+                <p class="lead">Yes / No</p>
+                <a class="btn btn-primary" href="https://www.youtube.com/" target="_blank">Yes</a>
+
+                <h2 id="form">好きなyoutuberは？</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="title">好きなyoutuberを入力してね</label>
+                        <input type="text" class="form-control" name="title" id="title">
+                    </div>
+                    <a class="btn btn-primary" type="submit">提出する</a>
+                </form>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </body>
+</html>
